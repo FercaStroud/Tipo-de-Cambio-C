@@ -3,13 +3,11 @@
 using namespace std;
 
 float menu, cantidad, dolar = 16.8, euro = 18;
-
 bool mostrarMenu(){
     printf("Lorem Ipsum Dolor sit\n\n");
     printf("[1]Peso a Dolar \n [2] Dolar a Peso \n [3]Euro a Peso \n\n");
     printf("[0]Pa salir papu \n\n");
     printf("Lorem Ipsum Dolor sit\n\n");
-
     scanf("%f", &menu);
     if(menu == 1 || menu == 2 || menu == 3){ return true; }
     else if(menu == 0) { return false; }
@@ -19,13 +17,11 @@ bool mostrarMenu(){
         return true;
     }
 }
-
 float operacion(int tipoCambio, float cantidadACamibar){
     if(tipoCambio==1)      return cantidadACamibar/dolar;
     else if(tipoCambio==2) return cantidadACamibar*dolar;
     else if(tipoCambio==3) return cantidadACamibar*euro;
 }
-
 int main() {
     while(mostrarMenu()){
         printf("CANTIDAD A CONVERTIR: \n\n");
@@ -41,4 +37,3 @@ int main() {
     printf("BYE");
     return 0;
 }
-
