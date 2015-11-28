@@ -21,12 +21,9 @@ bool mostrarMenu(){
 }
 
 float operacion(int tipoCambio, float cantidadACamibar){
-    if(tipoCambio==1)
-        return cantidadACamibar/dolar;
-    else if(tipoCambio==2)
-        return cantidadACamibar*dolar;
-    else if(tipoCambio==3)
-        return cantidadACamibar*euro;
+    if(tipoCambio==1)      return cantidadACamibar/dolar;
+    else if(tipoCambio==2) return cantidadACamibar*dolar;
+    else if(tipoCambio==3) return cantidadACamibar*euro;
 }
 
 int main() {
